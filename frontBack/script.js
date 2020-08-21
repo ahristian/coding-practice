@@ -1,5 +1,5 @@
 function frontBack(str){
-  let newString, lastString, newStr;
+  let newString, lastString;
   let stringLength = str.length;
   let repeat =[];
   if (stringLength < 1) {
@@ -11,8 +11,8 @@ function frontBack(str){
   if (stringLength > 2) {
     for (var i = 2; i < stringLength; i++){
       lastString = str[i];
-      newStr = str.charAt(i-1);
-      repeat += newStr;
+      repeat += str.charAt(i-1);
+
     }
     newString =  lastString + repeat + str.charAt(0);
   }
