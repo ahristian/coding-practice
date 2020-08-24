@@ -16,7 +16,7 @@ function frontBack(str){
     }
     newString =  lastString + repeat + str.charAt(0);
   }
-   return newString;
+  return newString;
 }
 console.log(frontBack("a"));
 console.log(frontBack("ab"));
